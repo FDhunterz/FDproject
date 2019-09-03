@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 @include('layout._head')
+@yield('extra_style')
 <style type="text/css">
 .select2-dropdown {
   z-index: 9001;
 }
 </style>
 <body class="body-loading body-cpanel">
-	<div id="wrapper">
 
 		<div class="div-loading animated fadeIn">
 
@@ -30,7 +30,7 @@
                     <div class="sk-rect5"></div>
                 </div>
             </div>
-		</div>
+		</div>	
 
         <div id="page-wrapper" class="gray-bg dashbard-1">
 			
@@ -40,7 +40,6 @@
 
 			@include('layout._footer')
 		</div>
-	</div>
 	@include('layout._script')
 	@yield('extra_script')
 </body>

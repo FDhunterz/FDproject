@@ -10,7 +10,7 @@
     
     <title>FDproject</title>
 
-    <link href="{{asset('assets/css/bootstrap-clockpicker.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/css/plugins/jQueryUI/jquery-ui.css')}}" rel="stylesheet">
     <link href="{{asset('assets/fontawesome-new/css/all.css')}}" rel="stylesheet">
 

@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/ping','ping\pingController@index')->name('index');
+Route::get('/ping','ping\pingController@index')->name('home');

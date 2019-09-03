@@ -387,7 +387,7 @@ body.canvas-menu .nav-header {
   padding: 33px 25px;
 }
 body.mini-navbar #page-wrapper {
-  margin: 0 0 0 70px;
+  margin: 0 0 0 0px;
 }
 body.fixed-sidebar.mini-navbar .footer,
 body.canvas-menu.mini-navbar .footer {
