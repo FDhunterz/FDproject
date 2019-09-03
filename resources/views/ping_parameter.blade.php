@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+@extends('main')
+@section('extra_style')
+@endsection
+
+@section('content')
+@endsection
+
+@section('extra_script')
 <script type="text/javascript">
 	function Pinger_ping(ip, callback) {
 
@@ -26,5 +28,4 @@
   }
 }
 </script>
-</body>
-</html>
+@endsection
