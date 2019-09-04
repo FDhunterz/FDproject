@@ -1,10 +1,14 @@
 @extends('main')
 @section('extra_style')
+<style type="text/css">
+</style>
 @endsection
 
 @section('content')
+<button class="b1" id="button1">
+    Tekan ini
+</button>
 <div class="row  border-bottom white-bg dashboard-header">
-
         <div class="col-sm-3">
             <h2>Ping Project</h2>
             <small>You have 42 messages and 6 notifications.</small>
@@ -42,16 +46,27 @@
             </ul>
         </div>
 </div>
+
 @endsection
 
 @section('extra_script')
 <script type="text/javascript">
+    var i = 0;
+    $('#button1').on('click',function(){
+        $(this).html('Anda Telah menekan ini');
+    })
+
+    if ($('#button1').html() == 'Anda Telah menekan ini') {
+        ++i;
+        $('#button1').html('menekan Tombol ini'+ i);
+    }
+
 	function Pinger_ping(ip, callback) {
 
   if(!this.inUse) {
 
     this.inUse = true;
-    this.callback = callback
+    this.callback = callback;
     this.ip = ip;
 
     var _that = this;
