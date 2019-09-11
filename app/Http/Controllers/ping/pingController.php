@@ -11,4 +11,9 @@ class pingController extends Controller
     {
     	return view('ping_parameter');
     }
+
+    public function coba()
+    {
+    	return 'coba ini';
+    }
 }
